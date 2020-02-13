@@ -8,18 +8,14 @@ $config['cache_folder']=$config['documentroot']."/cache";
 $config['cache'] = true;
 
 
-
+then in the area in your app you want to cache
 $html = $cache->fetch();
 
-if ( !$html )
-
+if ( !$stuffToCache )
 {//start non-cache content
-
 	html = this and that;
-  
-	$cache->save($html);
-  
+	$cache->save($stuffToCache);
 }//end non-cached content
 
-echo $html; 
+echo $stuffToCache; 
 
