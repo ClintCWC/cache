@@ -16,7 +16,7 @@ $html = $cache->fetch();
 if ( !$stuffToCache )
 {//start non-cache content
 
-	html = this and that;
+	$stuffToCache = 'this and that';
 	$cache->save($stuffToCache);
 	
 }//end non-cached content
